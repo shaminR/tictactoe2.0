@@ -1,9 +1,12 @@
 //tic tac toe
 {
+
 document.getElementById("11").onclick = function() {
-    if(document.getElementById("11").innerText == "-"){
-        document.getElementById("11").innerText = document.getElementById("operation").value;
-        switcher();
+    if(checker() == true){
+        if(document.getElementById("11").innerText == "-"){
+            document.getElementById("11").innerText = document.getElementById("operation").value;
+            switcher();
+        }
     }
     winchecker('O');
     winchecker('X');
@@ -11,9 +14,11 @@ document.getElementById("11").onclick = function() {
 };
 
 document.getElementById("12").onclick = function() {
-    if(document.getElementById("12").innerText == "-"){
-        document.getElementById("12").innerText = document.getElementById("operation").value;
-        switcher();
+    if(checker() == true){
+        if(document.getElementById("12").innerText == "-"){
+            document.getElementById("12").innerText = document.getElementById("operation").value;
+            switcher();
+        }
     }
     winchecker('O');
     winchecker('X');
@@ -21,9 +26,11 @@ document.getElementById("12").onclick = function() {
 };
 
 document.getElementById("13").onclick = function() {
-    if(document.getElementById("13").innerText == "-"){
-        document.getElementById("13").innerText = document.getElementById("operation").value;
-        switcher();
+    if(checker() == true){
+        if(document.getElementById("13").innerText == "-"){
+            document.getElementById("13").innerText = document.getElementById("operation").value;
+            switcher();
+        }
     }
     winchecker('O');
     winchecker('X');
@@ -31,9 +38,11 @@ document.getElementById("13").onclick = function() {
 };
 
 document.getElementById("21").onclick = function() {
-    if(document.getElementById("21").innerText == "-"){
-        document.getElementById("21").innerText = document.getElementById("operation").value;
-        switcher();
+    if(checker() == true){
+        if(document.getElementById("21").innerText == "-"){
+            document.getElementById("21").innerText = document.getElementById("operation").value;
+            switcher();
+        }
     }
     winchecker('O');
     winchecker('X');
@@ -41,27 +50,33 @@ document.getElementById("21").onclick = function() {
 };
 
 document.getElementById("22").onclick = function() {
-    if(document.getElementById("22").innerText == "-"){
-        document.getElementById("22").innerText = document.getElementById("operation").value;
-        switcher();
+    if(checker() == true){
+        if(document.getElementById("22").innerText == "-"){
+            document.getElementById("22").innerText = document.getElementById("operation").value;
+            switcher();
+        }
     }
     winchecker('O');
     winchecker('X');
 };
 
 document.getElementById("23").onclick = function() {
-    if(document.getElementById("23").innerText == "-"){
-        document.getElementById("23").innerText = document.getElementById("operation").value;
-        switcher();
+    if(checker() == true){
+        if(document.getElementById("23").innerText == "-"){
+            document.getElementById("23").innerText = document.getElementById("operation").value;
+            switcher();
+        }
     }
     winchecker('O');
     winchecker('X');
 };
 
 document.getElementById("31").onclick = function() {
-    if(document.getElementById("31").innerText == "-"){
-        document.getElementById("31").innerText = document.getElementById("operation").value;
-        switcher();
+    if(checker() == true){
+        if(document.getElementById("31").innerText == "-"){
+            document.getElementById("31").innerText = document.getElementById("operation").value;
+            switcher();
+        }
     }
     winchecker('O');
     winchecker('X');
@@ -69,18 +84,22 @@ document.getElementById("31").onclick = function() {
 };
 
 document.getElementById("32").onclick = function() {
-    if(document.getElementById("32").innerText == "-"){
-        document.getElementById("32").innerText = document.getElementById("operation").value;
-        switcher();
+    if(checker() == true){
+        if(document.getElementById("32").innerText == "-"){
+            document.getElementById("32").innerText = document.getElementById("operation").value;
+            switcher();
+        }
     }
     winchecker('O');
     winchecker('X');
 };
 
 document.getElementById("33").onclick = function() {
-    if(document.getElementById("33").innerText == "-"){
-        document.getElementById("33").innerText = document.getElementById("operation").value;
-        switcher();
+    if(checker() == true){
+        if(document.getElementById("33").innerText == "-"){
+            document.getElementById("33").innerText = document.getElementById("operation").value;
+            switcher();
+        }
     }
     winchecker('O');
     winchecker('X');
@@ -99,6 +118,14 @@ document.getElementById("reset").onclick = function() {
     document.getElementById("winner").style.backgroundColor = "gray";
     document.getElementById("winner").innerText = "Tied";  
 };
+
+function checker(){
+    if(document.getElementById("operation").value == "0"){
+        alert("Please Choose X or O to go first");
+        return false;
+    }
+    return true;
+}
 
 function switcher(){
     if(document.getElementById("operation").value == "X"){

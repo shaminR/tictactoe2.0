@@ -1,8 +1,9 @@
 body {
     font-family: Arial;
-    background-image: linear-gradient(blue, lightgray);
+    background-image: linear-gradient(lightskyblue, lightgray);
     background-repeat: no-repeat;
-    width: 300px;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #container {
@@ -12,14 +13,12 @@ body {
     color: black;
     font-weight: bold;
     width: 200px;
-    
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    position: relative;
-    top: 50%;
-    left: 50%;
+    margin-left: 40%;
+    margin-top: 10%;
 }
 
 p {
